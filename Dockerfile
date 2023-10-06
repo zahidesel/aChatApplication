@@ -4,9 +4,9 @@ EXPOSE 7777
 
 WORKDIR /app
 
-COPY deps.js .
+COPY database.js .
 
-RUN deno cache deps.js
+RUN deno cache database.js
 
 COPY . .
 
